@@ -6,6 +6,7 @@
     nav {
         display: block !important;
         background-color: var(--primary-color);
+        color: #ffff;
     }
 
     nav ul {

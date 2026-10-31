@@ -61,6 +61,7 @@ body {
 nav {
     display: none;
     background-color: var(--primary-color);
+    color: #fff;
 }
 
 nav.open {
@@ -73,7 +74,7 @@ nav ul {
 
 nav li a {
     display: block;
-    color: rgb(238, 238, 191);
+    color: #ffffff;
     text-decoration: none;
     padding: 0.85rem 1.5rem;
     font-weight: 600;
