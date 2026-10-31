@@ -73,7 +73,7 @@ nav ul {
 
 nav li a {
     display: block;
-    color: #ffff;
+    color: rgb(238, 238, 191);
     text-decoration: none;
     padding: 0.85rem 1.5rem;
     font-weight: 600;
