@@ -1,15 +1,15 @@
 :root {
-    --primary-color: #064e3b;       /* Verde-escuro profundo para textos e destaques principais */
-    --primary-hover: #022c22;       /* Tom de verde mais escuro para estados de hover */
-    --secondary-color: #059669;     /* Verde-esmeralda vibrante para elementos ativos e bordas */
-    --accent-completed: #065f46;    /* Verde forte para os textos de cursos concluídos */
-    --accent-completed-bg: #d1fae5; /* Fundo verde-claro suave para cursos concluídos */
-    --accent-pending-bg: #f0fdf4;   /* Fundo verde-claro quase branco para cursos pendentes */
-    --text-color: #1e293b;          /* Mantém o texto escuro padrão para excelente leitura */
-    --bg-color: #f8fafc;          /* Fundo geral neutro e suave */
-    --card-bg: #ffffff;             /* Fundo branco dos cards */
-    --border-color: #a7f3d0;        /* Borda em verde-claro suave */
-    --header-bg: #e6f4ea;           /* Fundo levemente esverdeado para o header e footer */
+    --primary-color: #064e3b;       
+    --primary-hover: #022c22;      
+    --secondary-color:#059669;      
+    --accent-completed: #065f46;    
+    --accent-completed-bg: #d1fae5; 
+    --accent-pending-bg: #f0fdf4;   
+    --text-color: #1e293b;          
+    --bg-color: #f8fafc;          
+    --card-bg: #ffffff;             
+    --border-color: #a7f3d0;        
+    --header-bg: #e6f4ea;           
     --font-heading: 'Roboto', sans-serif;
     --font-body: 'Open Sans', sans-serif;
 }
@@ -46,7 +46,7 @@ body {
     font-family: var(--font-heading);
     font-size: 1.1rem;
     font-weight: 700;
-    color: var(--primary-color); /* Atualizado para o verde escuro principal, garantindo contraste */
+    color: var(--primary-color); 
 }
 
 #menu-hamburger {
@@ -73,7 +73,7 @@ nav ul {
 
 nav li a {
     display: block;
-    color: #ffffff;
+    color: #ffff;
     text-decoration: none;
     padding: 0.85rem 1.5rem;
     font-weight: 600;
@@ -82,7 +82,7 @@ nav li a {
 
 nav li a:hover,
 nav li a.active {
-    background-color: var(--secondary-color);
+    background-color: #39475f;
 }
 
 /* Conteúdo Principal */
@@ -112,7 +112,7 @@ nav li a.active {
     border: 1px solid var(--border-color);
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 6px #0000000d;
 }
 
 .card-header {
@@ -189,13 +189,13 @@ nav li a.active {
 
 .curso-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 8px #00000014;
 }
 
 .curso-card.completed {
     background-color: var(--accent-completed-bg);
     border-color: var(--accent-completed);
-    color: var(--accent-completed);
+    color: #4b505a;
 }
 
 .creditos-container {
