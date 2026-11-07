@@ -1,0 +1,67 @@
+@media screen and (min-width: 768px) {
+    
+    
+    #hamburger-btn {
+        display: none;
+    }
+
+    
+    #nav-menu {
+        display: flex;
+        position: static;
+        width: auto;
+        background-color: transparent;        
+    }
+
+    #nav-menu ul {
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+
+    #nav-menu li a {
+        display: flex;
+        border-bottom: none;
+        padding: 0.5rem 0.8rem;
+        border-radius: 4px;
+    }
+
+    /* Ajuste do banner principal */
+    .hero {
+       height: 320px;
+       width: 100%;
+    }
+
+    
+    .info-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .event-card {
+        margin-bottom: 0;
+    }
+
+    
+    .spotlight-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        margin-bottom: 0;
+    }
+
+    /* Rodapé em 3 colunas horizontais */
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    .footer-meta {
+        text-align: right;
+    }
+}
