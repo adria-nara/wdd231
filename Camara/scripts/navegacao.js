@@ -30,13 +30,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Função para renderizar os cartões dos membros
     function renderizarMembros(membros) {
-        containerMembros.innerHTML = ""; // Limpa o container antes de renderizar
-
+        containerMembros.innerHTML = ""; 
+        
         membros.forEach(membro => {
             const cartao = document.createElement("section");
             cartao.classList.add("card");
 
-            // Estrutura HTML do cartão respeitando as classes definidas em telas-pequenas.css
+           
             cartao.innerHTML = `
                 <h2>${membro.nome}</h2>
                 <div class="card-info">
