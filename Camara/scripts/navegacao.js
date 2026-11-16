@@ -15,6 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 1. Função assíncrona para buscar os dados JSON
     async function obterMembros() {
+        // Se o container de membros não existir nesta página, interrompe a execução
+        if (!containerMembros) return;
+
         try {
             const resposta = await fetch("dados/membros.json");
             if (!resposta.ok) {
@@ -31,17 +34,17 @@ document.addEventListener("DOMContentLoaded", () => {
     // Função para renderizar os cartões dos membros
     function renderizarMembros(membros) {
         containerMembros.innerHTML = ""; 
-        
+
         membros.forEach(membro => {
             const cartao = document.createElement("section");
             cartao.classList.add("card");
 
-           
+            // Estrutura HTML do cartão respeitando as classes definidas em telas-pequenas.css
             cartao.innerHTML = `
-                <h2>${membro.nome}</h2>
+                <a href="${membro.site}" target="_blank" rel="noopener noreferrer" class="link-detalhes"><img src="${membro.logo}" alt="Logo de ${membro.nome}"></a>
                 <div class="card-info">
-                    <a href="${membro.site}" target="_blank" rel="noopener noreferrer" class="link-detalhes"><img src="${membro.logo}" alt="Logo de ${membro.logo}" loading="lazy"></a>
-                    <p class="ano">${membro.categoria}</p>
+                    <h2>${membro.nome}</h2>
+                    <p class="categoria">${membro.categoria}</p>
                     <p class="info-extra"><strong>E-mail:</strong> ${membro.email}</p>
                     <p class="info-extra"><strong>Telefone:</strong> ${membro.telefone}</p>
                     <p class="info-extra"><strong>Site:</strong> ${membro.site}</p>
