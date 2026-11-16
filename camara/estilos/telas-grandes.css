@@ -1,0 +1,92 @@
+/* ==========================================================================
+   REGRAS PARA TELAS GRANDES (MEDIA QUERY >= 768px)
+   ========================================================================== */
+
+@media screen and (min-width: 768px) {
+    #hamburger-btn {
+        display: none;
+    }
+
+    #nav-menu {
+        display: flex !important;
+        position: static;
+        width: auto;
+        background-color: var(--bg-transparent);
+        box-shadow: none;
+        border-top: none;
+    }
+
+    #nav-menu ul {
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        align-items: center;
+        list-style: none;
+    }
+
+    #nav-menu li a {
+        display: flex;
+        border-bottom: none;
+        padding: 0.5rem 0.9rem;
+        border-radius: var(--radius, 4px);
+        font-size: 0.95rem;
+        color: #000;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    #nav-menu li a:hover,
+    #nav-menu li a.active,
+    #nav-menu li a[aria-current="page"] {
+        text-decoration: underline;
+        text-decoration-color: #000;
+        text-decoration-style: solid;   
+        text-decoration-thickness: 2px; 
+        text-underline-offset: 4px;   
+        font-weight: 600;
+    }
+
+    .hero {
+        height: 320px;
+        width: 100%;
+    }
+
+    .info-grid {
+        display: grid;
+        grid-template-columns: 2fr 1.2fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .spotlight-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.2rem;
+        margin-bottom: 0;
+    }
+
+    .list-view {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .list-view .card {
+        flex-direction: row;
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    .event-card {
+        margin-bottom: 0;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    .footer-projeto {
+        text-align: right;
+    }
+}
