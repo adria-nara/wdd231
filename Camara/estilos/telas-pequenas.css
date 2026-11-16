@@ -190,7 +190,7 @@ main { max-width: 1200px; width: 100%; margin: 0 auto; padding: 1.5rem 1rem; fle
     border-radius: 6px;
     font-size: 0.9rem;
 }
-.forecast-item strong { color: var(--text-main); }
+.forecast-item strong { color: #000; }
 .forecast-item span { color: var(--primary); font-weight: 700; }
 
 .spotlight-card { position: relative; }

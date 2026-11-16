@@ -51,10 +51,6 @@
         width: 100%;
     }
 
-    .hero-overlay-text {
-        font-size: 1.5rem;
-    }
-
     .info-grid {
         display: grid;
         grid-template-columns: 2fr 1.2fr 1fr;
