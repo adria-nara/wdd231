@@ -277,3 +277,95 @@ footer { padding: 1.5rem; margin-top: 2rem; display: flex; flex-direction: colum
 .dados h4, .dados p, .footer-projeto p { color: #000; }
 .redes-sociais { display: flex; justify-content: center; gap: 1.25rem; margin-bottom: 0.75rem; }
 .redes-sociais img { width: 28px; height: 28px; transition: transform 0.2s ease; }
+
+.membership-form fieldset {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.membership-form label {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.membership-form input[type="text"],
+.membership-form input[type="email"],
+.membership-form input[type="tel"],
+.membership-form select,
+.membership-form textarea {
+    display: block;
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.3rem;
+    border: 1px solid #777;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #003d80;
+}
+
+
+.card-animate {
+    animation: fadeInSlideUp 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.membership-cards .card:nth-child(1) { animation-delay: 0.1s; }
+.membership-cards .card:nth-child(2) { animation-delay: 0.2s; }
+.membership-cards .card:nth-child(3) { animation-delay: 0.3s; }
+.membership-cards .card:nth-child(4) { animation-delay: 0.4s; }
+
+
+.membership-modal {
+    border: 2px solid #800020;
+    border-radius: 8px;
+    padding: 1.5rem;
+    max-width: 90%;
+    width: 400px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.membership-modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.close-modal-btn {
+    float: right;
+    background: #e0e0e0;
+    border: 1px solid #999;
+    font-size: 1.2rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    cursor: pointer;
+}

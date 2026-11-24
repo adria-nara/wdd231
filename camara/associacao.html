@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câmara de Comércio do Municipio de Manaus - AM</title>
+    <meta name="description" content="Câmara de Comércio do Municipio de Manaus - Amazonas.">
+    <meta name="author" content="Adria Nara da Silva">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+    <script src="scripts/data.js" defer></script>
+    <script src="scripts/navegacao.js" defer></script>
+    <script src="scripts/clima.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+    
+    <link rel="icon" href="imagens/favicon.ico">
+
+    <meta property="og:title" content="Página Inicial da Câmara de Comércio do Município de Manaus-AM">
+    <meta property="og:description" content="Conheça todas as oportunidades de negócio no Municipio de Manaus.">
+    <meta property="og:image" content=" https://adria-nara.github.io/wdd231/camara/imagens/logo.png">   
+    <meta property="og:url" content="https://www.ccmmanaus.org/index.html">
+
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="logo-camara">
+            <img src="imagens/logo.png" alt="Logo Câmara de Comércio do Municipio de Manaus" class="logo">
+            <div class="site-nome">
+                <h1>Câmara de Comércio</h1>
+                <p>Municipio de Manaus</p>
+            </div>
+        </div>
+        
+        <button id="hamburger-btn" aria-label="Abrir Menu">&#9776;</button>
+
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html" class="active" aria-current="page">Início</a></li>
+                <li><a href="diretorio.html">Diretório</a></li>
+                <li><a href="#">Associar-se</a></li>
+                <li><a href="#">Descobrir</a></li>
+            </ul>
+        </nav>
+
+        
+    </header>
+
+    <main class="join-main">
+        <h2>Participar</h2>
+
+        <div class="join-container">
+            <!-- Formulário (Coluna da Esquerda) -->
+            <section class="form-section">
+                <h3>Formulário de Inscrição de Associado</h3>
+                
+                <form method="get" action="agradecimento.html" class="membership-form">
+                    <label title="Digite seu primeiro nome">
+                        Nome *
+                        <input type="text" name="fname" id="fname" required autocomplete="given-name" title="Digite seu primeiro nome">
+                    </label>
+
+                    <label title="Digite seu sobrenome">
+                        Sobrenome *
+                        <input type="text" name="lname" id="lname" required autocomplete="family-name" title="Digite seu sobrenome">
+                    </label>
+
+                    <label title="Cargo na organização (Mínimo de 7 caracteres, apenas letras, hifens e espaços)">
+                        Cargo
+                        <input type="text" name="title" id="title" autocomplete="organization-title" pattern="[A-Za-zÀ-ÿ\s\-]{7,}" title="Digite no mínimo 7 caracteres alfabéticos, hifens ou espaços">
+                    </label>
+
+                    <label title="Endereço de e-mail institucional ou pessoal">
+                        Email *
+                        <input type="email" name="email" id="email" required autocomplete="email" placeholder="john89@gmail.com" title="Endereço de e-mail válido">
+                    </label>
+
+                    <label title="Número de telefone celular para contato">
+                        Celular *
+                        <input type="tel" name="phone" id="phone" required autocomplete="tel" placeholder="987-555-1234" title="Número de telefone celular">
+                    </label>
+
+                    <label title="Nome da empresa ou organização">
+                        Organização *
+                        <input type="text" name="organization" id="organization" required autocomplete="organization" title="Nome da empresa ou organização">
+                    </label>
+
+                    <label title="Descrição curta do negócio ou organização">
+                        Descrição do Negócio
+                        <textarea name="description" id="description" rows="4" title="Descrição da atividade ou organização"></textarea>
+                    </label>
+
+                    <!-- Seleção por Radio Buttons conforme Wireframe Desktop -->
+                    <fieldset class="radio-fieldset">
+                        <legend>Nível de Associação *</legend>
+                        
+                        <label class="radio-label" title="Associação Sem Fins Lucrativos">
+                            <input type="radio" name="membership-level" value="np" required>
+                            Associação Sem Fins Lucrativos
+                        </label>
+                        
+                        <label class="radio-label" title="Associação Bronze">
+                            <input type="radio" name="membership-level" value="bronze">
+                            Associação Bronze
+                        </label>
+                        
+                        <label class="radio-label" title="Associação Prata">
+                            <input type="radio" name="membership-level" value="silver">
+                            Associação Prata
+                        </label>
+                        
+                        <label class="radio-label" title="Associação Ouro">
+                            <input type="radio" name="membership-level" value="gold">
+                            Associação Ouro
+                        </label>
+                    </fieldset>
+
+                    <!-- Campo oculto com carimbo de data/hora -->
+                    <input type="hidden" name="timestamp" id="timestamp">
+
+                    <button type="submit" class="submit-btn">Solicitar Associação</button>
+                </form>
+            </section>
+
+            <!-- Cartões de Associação (Coluna da Direita) -->
+            <section class="membership-cards-section">
+                <h3>Níveis de Associação</h3>
+
+                <div class="membership-cards">
+                    <div class="card card-animate">
+                        <h4>Nível de Associação Sem Fins Lucrativos</h4>
+                        <button type="button" class="open-modal-btn" data-modal="modal-np">Saiba Mais</button>
+                    </div>
+
+                    <div class="card card-animate">
+                        <h4>Associação Bronze</h4>
+                        <button type="button" class="open-modal-btn" data-modal="modal-bronze">Saiba Mais</button>
+                    </div>
+
+                    <div class="card card-animate">
+                        <h4>Associação Prata</h4>
+                        <button type="button" class="open-modal-btn" data-modal="modal-silver">Saiba Mais</button>
+                    </div>
+
+                    <div class="card card-animate">
+                        <h4>Associação Ouro</h4>
+                        <button type="button" class="open-modal-btn" data-modal="modal-gold">Saiba Mais</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Modais (Dialogs HTML5) com layout fidedigno às capturas dos wireframes -->
+        <dialog id="modal-np" class="membership-modal">
+            <button class="close-modal-btn" aria-label="Fechar">X</button>
+            <h3>Associação Sem Fins Lucrativos</h3>
+            <hr>
+            <p><strong>Os benefícios incluem:</strong></p>
+            <ul>
+                <li>Você recebe uma bela placa com o selo do prefeito</li>
+                <li>Você pode desfilar em uma carruagem no Dia de São Patrício</li>
+            </ul>
+            <p class="cost"><strong>CUSTO: Gratuito</strong></p>
+        </dialog>
+
+        <dialog id="modal-bronze" class="membership-modal">
+            <button class="close-modal-btn" aria-label="Fechar">X</button>
+            <h3>Associação Bronze</h3>
+            <hr>
+            <p><strong>Os benefícios incluem:</strong></p>
+            <ul>
+                <li>Convite para eventos especiais</li>
+                <li>Ingressos com desconto para jogos locais</li>
+            </ul>
+            <p class="cost"><strong>CUSTO: $10 por ano</strong></p>
+        </dialog>
+
+        <dialog id="modal-silver" class="membership-modal">
+            <button class="close-modal-btn" aria-label="Fechar">X</button>
+            <h3>Associação Prata</h3>
+            <hr>
+            <p><strong>Os benefícios incluem:</strong></p>
+            <ul>
+                <li>Destaque intermediário no Diretório</li>
+                <li>Convite para eventos especiais</li>
+                <li>Refrigerente grátis na lanchonete</li>
+            </ul>
+            <p class="cost"><strong>CUSTO: $20 por ano</strong></p>
+        </dialog>
+
+        <dialog id="modal-gold" class="membership-modal">
+            <button class="close-modal-btn" aria-label="Fechar">X</button>
+            <h3>Associação Ouro</h3>
+            <hr>
+            <p><strong>Os benefícios incluem:</strong></p>
+            <ul>
+                <li>Destaque na Página Inicial</li>
+                <li>Convite para eventos especiais</li>
+                <li>Refrigerente grátis na lanchonete</li>
+                <li>Ingressos com desconto para todos os jogos de futebol americano</li>
+                <li>Você recebe uma bela placa com o selo do prefeito</li>
+                <li>Você pode desfilar em uma carruagem no Dia de São Patrício</li>
+            </ul>
+            <p class="cost"><strong>CUSTO: $30 por ano</strong></p>
+        </dialog>
+    </main>
+
+    <footer>
+        <div class="dados">
+            <p>Câmara de Comércio do Município de Manaus</p>
+            <p>Av Constantino Nery, 120</p>
+            <p>Manaus - AM, Brasil</p>
+            <p>ccmm@comercio.org</p>
+            <p>(92) 3336-3426</p>
+        </div>
+
+         <div class="redes-sociais">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener"><img src="imagens/linkedin.png" alt="Perfil do LinkedIn"></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener"><img src="imagens/instagram.png" alt="Perfil do Instagram"></a>
+        </div>
+
+        <div class="footer-projeto">
+            <p>Projeto de Aula WDD231</p>
+            <p>Adria Nara da Silva</p>
+            <p>&copy; <span id="anoAtual"> </span> Câmara de Comércio do Municipio de Manaus</p>
+            <p><span id="ultimaModificacao">Última Modificação:</span></p>
+        </div>
+    </footer>
+</body>
+</html>

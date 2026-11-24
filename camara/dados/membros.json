@@ -11,7 +11,7 @@
   {
     "nome": "TVLar",
     "categoria": "Varejo e E-commerce",
-    "logo": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T4uyZdpbz2Ro_r2OIl6b-h7JJPI9Dymkqvm3RdYePJyWibDYFWvPf3XMeCf3i4EsAYu5VYBBU5mbZhH40pTFTTStLVnqw8gRjO2dlIR7ku_aTJPYUFJ4Mc9T_S2j340MMfa786f4BlAYs=s680-w680-h510-rw",
+    "logo": "imagens/tvlar.webp",
     "email": "sac@tvlar.com.br",
     "telefone": "(92) 3133-5000",
     "site": "https://www.tvlar.com.br",
@@ -20,7 +20,7 @@
   {
     "nome": "Supermercados DB",
     "categoria": "Supermercados e Varejo",
-    "logo": "https://s2-g1.glbimg.com/41TD58L43KVhefNPyfaHwZAqTgc=/0x0:1718x822/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/e/l/9CFUfZTKCTQzSk2wYVkA/materia-3-db-24-horas.png",
+    "logo": "imagens/supermercados.wedp",
     "email": "sac@hiperdb.com.br",
     "telefone": "(92) 3642-1000",
     "site": "https://www.supermercadosdb.com.br",
@@ -29,7 +29,7 @@
   {
     "nome": "Fechacom",
     "categoria": "Ferragens e Segurança",
-    "logo": "https://media.licdn.com/dms/image/v2/D4D1BAQGnfarG69sm7w/company-background_10000/company-background_10000/0/1658335747808/fechacom00_cover?e=2147483647&v=beta&t=fb4oOhtyLY0-nE1V0U9DU7fEsuHHUB88ub0bD7WJPFk",
+    "logo": "imagens/fechacom.wedp",
     "email": "contato@fechacom.com.br",
     "telefone": "(92) 3233-2000",
     "site": "https://www.fechacom.com.br",
