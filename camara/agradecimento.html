@@ -3,30 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Confirmação de recebimento do formulário de associação.">
-    <title>Agradecimento | Câmara de Comércio</title>
-    <link rel="stylesheet" href="estilos/telas-grandes.css">
+    <title>Câmara de Comércio do Municipio de Manaus - AM</title>
+    <meta name="description" content="Câmara de Comércio do Municipio de Manaus - Amazonas.">
+    <meta name="author" content="Adria Nara da Silva">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+    <script src="scripts/data.js" defer></script>
+    <script src="scripts/navegacao.js" defer></script>
     <script src="scripts/agradecimentos.js" defer></script>
+    
+    <link rel="icon" href="imagens/favicon.ico">
+
+    <meta property="og:title" content="Página Inicial da Câmara de Comércio do Município de Manaus-AM">
+    <meta property="og:description" content="Conheça todas as oportunidades de negócio no Municipio de Manaus.">
+    <meta property="og:image" content=" https://adria-nara.github.io/wdd231/camara/imagens/logo.png">   
+    <meta property="og:url" content="https://www.ccmmanaus.org/index.html">
+
 </head>
 <body>
+
+    <!-- CABEÇALHO -->
     <header>
-        <div class="logo-container">
-            <img src="images/logo.webp" alt="Logo da Câmara de Comércio" width="60" height="60">
-            <div>
+        <div class="logo-camara">
+            <img src="imagens/logo.png" alt="Logo Câmara de Comércio do Municipio de Manaus" class="logo">
+            <div class="site-nome">
                 <h1>Câmara de Comércio</h1>
-                <p>Manaus & Região</p>
+                <p>Municipio de Manaus</p>
             </div>
         </div>
-        <button id="menu-button" aria-label="Abrir Menu de Navegação">&#9776;</button>
-        <nav id="primary-nav">
+        
+        <button id="hamburger-btn" aria-label="Abrir Menu">&#9776;</button>
+
+        <nav id="nav-menu">
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="descubra.html">Descubra</a></li>
+                <li><a href="index.html" class="active" aria-current="page">Início</a></li>
                 <li><a href="diretorio.html">Diretório</a></li>
                 <li><a href="associacao.html">Associar-se</a></li>
+                <li><a href="#">Descobrir</a></li>
             </ul>
         </nav>
+
+        
     </header>
 
     <main class="thanks-main">
@@ -39,8 +61,25 @@
     </main>
 
     <footer>
-        <p>&copy; <span id="currentyear"></span> Câmara de Comércio | Manaus, AM</p>
-        <p id="lastModified"></p>
+        <div class="dados">
+            <p>Câmara de Comércio do Município de Manaus</p>
+            <p>Av Constantino Nery, 120</p>
+            <p>Manaus - AM, Brasil</p>
+            <p>ccmm@comercio.org</p>
+            <p>(92) 3336-3426</p>
+        </div>
+
+         <div class="redes-sociais">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener"><img src="imagens/linkedin.png" alt="Perfil do LinkedIn"></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener"><img src="imagens/instagram.png" alt="Perfil do Instagram"></a>
+        </div>
+
+        <div class="footer-projeto">
+            <p>Projeto de Aula WDD231</p>
+            <p>Adria Nara da Silva</p>
+            <p>&copy; <span id="anoAtual"> </span> Câmara de Comércio do Municipio de Manaus</p>
+            <p><span id="ultimaModificacao">Última Modificação:</span></p>
+        </div>
     </footer>
 </body>
 </html>

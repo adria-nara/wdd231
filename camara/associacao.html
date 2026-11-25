@@ -16,7 +16,7 @@
     <script src="scripts/data.js" defer></script>
     <script src="scripts/navegacao.js" defer></script>
     <script src="scripts/clima.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/modais.js" defer></script>
     
     <link rel="icon" href="imagens/favicon.ico">
 
@@ -42,9 +42,9 @@
 
         <nav id="nav-menu">
             <ul>
-                <li><a href="index.html" class="active" aria-current="page">Início</a></li>
+                <li><a href="index.html">Início</a></li>
                 <li><a href="diretorio.html">Diretório</a></li>
-                <li><a href="#">Associar-se</a></li>
+                <li><a href="associacao.html" class="active" aria-current="page">Associar-se</a></li>
                 <li><a href="#">Descobrir</a></li>
             </ul>
         </nav>
@@ -88,7 +88,7 @@
 
                     <label title="Nome da empresa ou organização">
                         Organização *
-                        <input type="text" name="organization" id="organization" required autocomplete="organization" title="Nome da empresa ou organização">
+                        <input type="text" name="organization" id="organization" autocomplete="organization" title="Nome da empresa ou organização">
                     </label>
 
                     <label title="Descrição curta do negócio ou organização">
@@ -156,7 +156,7 @@
             </section>
         </div>
 
-        <!-- Modais (Dialogs HTML5) com layout fidedigno às capturas dos wireframes -->
+       
         <dialog id="modal-np" class="membership-modal">
             <button class="close-modal-btn" aria-label="Fechar">X</button>
             <h3>Associação Sem Fins Lucrativos</h3>
@@ -202,10 +202,8 @@
             <ul>
                 <li>Destaque na Página Inicial</li>
                 <li>Convite para eventos especiais</li>
-                <li>Refrigerente grátis na lanchonete</li>
-                <li>Ingressos com desconto para todos os jogos de futebol americano</li>
-                <li>Você recebe uma bela placa com o selo do prefeito</li>
-                <li>Você pode desfilar em uma carruagem no Dia de São Patrício</li>
+                <li>Ingressos com desconto para todos os jogos de futebol</li>
+                
             </ul>
             <p class="cost"><strong>CUSTO: $30 por ano</strong></p>
         </dialog>
