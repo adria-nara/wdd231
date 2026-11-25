@@ -20,7 +20,7 @@
   {
     "nome": "Supermercados DB",
     "categoria": "Supermercados e Varejo",
-    "logo": "imagens/supermercados.wedp",
+    "logo": "imagens/supermercados.webp",
     "email": "sac@hiperdb.com.br",
     "telefone": "(92) 3642-1000",
     "site": "https://www.supermercadosdb.com.br",
@@ -29,7 +29,7 @@
   {
     "nome": "Fechacom",
     "categoria": "Ferragens e Segurança",
-    "logo": "imagens/fechacom.wedp",
+    "logo": "imagens/fechacom.webp",
     "email": "contato@fechacom.com.br",
     "telefone": "(92) 3233-2000",
     "site": "https://www.fechacom.com.br",
@@ -38,7 +38,7 @@
   {
     "nome": "Infostore",
     "categoria": "Tecnologia e Eletrônicos",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwxIpNKoYfE6vG9GjWYIM10K9_omvcvd6VwSixNt_y-Q&s=10",
+    "logo": "imagens/infostore.webp",
     "email": "vendas@infostore.com.br",
     "telefone": "(92) 3303-8000",
     "site": "https://www.infostore.com.br",
@@ -47,7 +47,7 @@
   {
     "nome": "Samel",
     "categoria": "Saúde e Planos de Saúde",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYU4aNz4UsaJCufZCQ1gEs2-aX98eolqmwBjZgEBAOig&s=10",
+    "logo": "imagens/samel.webp",
     "email": "atendimento@samel.com.br",
     "telefone": "(92) 3134-9000",
     "site": "https://www.samel.com.br",
@@ -56,7 +56,7 @@
   {
     "nome": "Academia Live",
     "categoria": "Fitness e Bem-estar",
-    "logo": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SXBtNLByvWgLMNyWxnKGRey1E9IbQKRGmCWVQn6zN_6TwCKwxNpYRMtHHs64j_IDBU8gfBx0k4-r11cK5-oqDlIf5bRzsfrwPZt7wtIG1-GJo1zwK5GW2e4qhP-f7NX5Gg7YWaMQ=w225-h188-n-k-no-nu",
+    "logo": "imagens/live.webp",
     "email": "contato@academialive.com.br",
     "telefone": "(92) 3236-4000",
     "site": "https://www.academialive.com.br",
